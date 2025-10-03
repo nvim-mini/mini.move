@@ -1,10 +1,9 @@
 *mini.move* Move any selection in any direction
-*MiniMove*
 
 MIT License Copyright (c) 2023 Evgeni Chasnovski
 
-==============================================================================
-
+------------------------------------------------------------------------------
+                                                                      *MiniMove*
 Features:
 - Works in two modes:
     - Visual mode. Select text (charwise with |v|, linewise with |V|, and
@@ -46,7 +45,7 @@ as `MiniMove.config`. See |mini.nvim-buffer-local-config| for more details.
 
 # Comparisons ~
 
-- 'matze/vim-move':
+- [matze/vim-move](https://github.com/matze/vim-move):
     - Doesn't support vertical movement of charwise and blockwise selections.
       While 'mini.move' does.
     - Doesn't support horizontal movement of current line in favor of
@@ -55,7 +54,7 @@ as `MiniMove.config`. See |mini.nvim-buffer-local-config| for more details.
       of current character.
     - Has extra functionality for certain moves (like move by half page).
       While 'mini.move' does not (by design).
-- 'booperlv/nvim-gomove':
+- [booperlv/nvim-gomove](https://github.com/booperlv/nvim-gomove):
     - Doesn't support movement in charwise visual selection.
       While 'mini.move' does.
     - Has extra functionality beyond moving text, like duplication.
@@ -86,9 +85,7 @@ Usage ~
 ------------------------------------------------------------------------------
                                                                *MiniMove.config*
                                `MiniMove.config`
-Module config
-
-Default values:
+Defaults ~
 >lua
   MiniMove.config = {
     -- Module mappings. Use `''` (empty string) to disable one.
